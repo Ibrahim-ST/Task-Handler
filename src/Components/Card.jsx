@@ -2,6 +2,7 @@ import { FaBuffer, FaComments } from 'react-icons/fa';
 import {   FaClipboardList, FaPaperclip, FaRegCalendarDays } from 'react-icons/fa6';
 
 const Card = () => {
+     
     return (
         <div className="my-6 px-2 mx-2 bg-white rounded py-2 space-y-3">
             <div className="flex justify-between ">
@@ -19,7 +20,7 @@ const Card = () => {
                 <span><FaBuffer /></span>
                 <p className="">Lorem ipsum dolor sit amet curn..</p>
                 </div>
-                <button className='btn btn-secondary flex items-center bg-slate-200 rounded p-1'> <FaClipboardList /> <span>1/2</span></button>
+                <button className='  flex items-center bg-slate-200 rounded p-1'> <FaClipboardList /> <span>1/2</span></button>
             </div>
             <div className='flex items-center justify-between'>
                 <img className='w-8 h-8 rounded-full ' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA6zq21NVsOxQs4PL4rJU30aiCXEkVrwB-Y19RYowqhUGklgM3SNfj6e-L1UU3mfuyByM&usqp=CAU" alt="" />
@@ -29,8 +30,10 @@ const Card = () => {
                 <FaComments size={25} color='gray' />
                 <span>15</span>
             </span>
-            <span className='flex items-center gap-1'>
-                <FaPaperclip />
+            <span className='flex items-center gap-1' >
+                <label htmlFor="my_modal_6">
+                <FaPaperclip   />
+                </label>
                 <span>25</span>
             </span>
             <span className='flex items-center gap-1'>
@@ -38,6 +41,19 @@ const Card = () => {
                 <p className=' '>30-12-2022</p>
             </span>
             </div>
+            
+            <input type="checkbox" id="my_modal_6" className="modal-toggle" />
+            <div className="modal">
+            <div className="modal-box w-11/12 max-w-5xl">
+                <input type="file" className="file-input file-input-bordered file-input-accent w-full  " />
+                <h3 className="font-bold text-lg">Hello!</h3>
+                <p className="py-4">This modal works with a hidden checkbox!</p>
+                <div className="modal-action">
+                <label htmlFor="my_modal_6" className="btn">Close!</label>
+                </div>
+            </div>
+            </div>
+
             
         </div>
     );
