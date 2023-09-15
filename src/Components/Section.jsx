@@ -6,7 +6,6 @@ import Card from "./Card";
 const Section = ({title, color}) => {
     return (
         <div className="w-full">
-
         <div className='w-[390px] bg-[#F2F4F7] h-screen overflow-y-scroll'>
             <div className=" ">
             <div className='flex justify-between p-2 px-4 text-gray-600'>
